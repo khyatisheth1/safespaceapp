@@ -1,0 +1,11 @@
+runtime: python39
+
+handlers:
+  - url: /.*
+    script: auto
+  - url: /api/.*
+    script: main.app
+
+env_variables:
+  # Add any environment variables here
+  EXAMPLE_VAR: 'value'
